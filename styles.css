@@ -1,0 +1,112 @@
+/* Goofy borders around everything to help us see the layout. */
+* {
+    border: 2px solid cornflowerblue;
+    margin: 5px;
+    padding: 3px;
+}
+
+/* body takes up full viewport and extends all the way to the edges. */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100vh;
+
+}
+
+.header {
+    display: flex;
+/*    align-content: space-between;*/
+    height: 18%;
+    min-height: 18%;
+/*    justify-content: center;*/
+    align-items: center;
+
+}
+
+.site_name {
+    align-content: flex-start;
+    width: 60%;
+
+}
+
+.nav {
+    flex-direction: row;
+   display: flex;
+    align-items: flex-end;
+    width: 40%;
+
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    border: none;
+
+}
+
+.content {
+
+    display: flex;
+    min-height: 60%;
+    height: auto;
+
+}
+
+.main_article {
+    display: flex;
+    width: 75%;
+    height: auto;
+    min-height: 100%;
+}
+
+.sidebar {
+    display: flex;
+    width: 25%;
+
+}
+
+.footer {
+    display: flex;
+    height: 12%;
+    min-height: 12%;
+
+}
+
+.copyright {
+    width: 25%;
+}
+
+.footer_menu {
+    flex-direction: row;
+    width: 75%;
+    align-content: space-between;
+    justify-content: flex-end;
+
+}
+
+ul footer_menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li footer_menu {
+    display: flex;
+    flex-direction: row;
+
+}
